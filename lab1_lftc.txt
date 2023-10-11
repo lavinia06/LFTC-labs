@@ -4,39 +4,40 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-defi maxim(int a, int b, int c)[
+def maxim(int a, int b, int c)[
     int maximum == find_maxim(num1, num2, num3).
 
 # Print the result
     write_console("The maximum number is:", maximum).
 ]
 
-defi minim(int a, int b, int c)[
+def minim(int a, int b, int c)[
     int minim == find_minim(num1, num2, num3).
 
 # Print the result
     write_console("The maximum number is:", minim).
 ]
 
-defi prime(int a)[
+def prime(int a)[
     bool is_prime == check_prime(a).
 
-    if_it_is(is_prime == true)[
+    if(is_prime == true)[
         write_console("prime number").
     ]
-    else_not[write_console("non prime number").]
+    else
+    [write_console("non prime number").]
 
 ]
 
-defi sum(int n)[
-    as_soon_as(n>0)[
+def sum(int n)[
+    while(n>0)[
         list list_n == empty.
         list_n.append(n).
         n == n-1.
     ]
 
     int i==0.
-    as_soon_as(i<n)[
+    while(i<n)[
         int suma ==0 #syntax error! the execution line must end with .
         suma == list_n[i]+suma. #wrong call of function
         i == i+1.
@@ -46,10 +47,11 @@ defi sum(int n)[
 ]
 
 
-defi main()[
+def main()[
     write_console(maxim(1, 2, 3)).
     write_console(minim(1, 2, 3)).
     write_console(sum(3)).
 
-    program_out.
 ]
+
+    PROGRAM_OUT.
