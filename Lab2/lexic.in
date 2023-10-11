@@ -1,0 +1,20 @@
+Alphabet
+a-z
+A-Z
+0-9
+_
+
+Lexic
+
+operators: +, -, *, /, ==, <, <=, >, >=, !==
+separators: (), [], ;, space, newline, .
+reserved words: write_console, find_maxim, find_minim, check_prime, if, else, read, write(to file), program out, while, sum
+
+identifier = (letter|"_"){letter|digit|"_"}
+letter = "A"|"B"|..|"Z"|"a"|"b"..|"z"
+digit = "0"|"1"|..|"9"
+
+int_constant = ["+"|"-"] non_zero_digit {digit} | "0"
+non_zero_digit = "1"|"2"|..|"9"
+
+string_constant = """{letter|digit|"_"|" "}"""
