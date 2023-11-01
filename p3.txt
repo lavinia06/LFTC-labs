@@ -1,0 +1,17 @@
+def prime(int a)[
+    bool is_prime == check_prime(a).
+
+    if(is_prime == true)[
+        write_console("prime number").
+    ]
+    else
+    [ write_console("non prime number").]
+
+]
+
+def main()[
+    write_console(prime(1)).
+
+]
+
+    PROGRAM_OUT.
