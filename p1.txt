@@ -1,13 +1,14 @@
-
-def maxim(int a, int b, int c)[
-    int maximum == max(num1, num2, num3).
-
-    write_console (maximum).
-]
-
-def main()[
-    write_console(maxim(1, 2, 3)).
-
-]
-
-    PROGRAM_OUT.
+prog {
+a (int), b (int), c (int), smallest (int);
+read(a);
+read(b);
+read(c);
+smallest = a;
+if smallest > b {
+	smallest = b;
+};
+if smallest > c {
+	smallest = c;
+};
+print(smallest);
+}
